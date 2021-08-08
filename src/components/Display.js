@@ -1,5 +1,6 @@
 import React from "react";
 import Board from "./Board";
+import DisplayInfo from "./DisplayInfo";
 import "./css/Display.css";
 
 class Display extends React.Component {
@@ -9,12 +10,11 @@ class Display extends React.Component {
         <div className="display-board">
           <Board />
         </div>
-        <div className="display-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
-          <ol>Type: {this.props.type}</ol>
-          <ol>Elements: {this.props.elements}</ol>
-        </div>
+        <DisplayInfo
+          type={this.props.type}
+          age={this.props.age}
+          elements={this.props.elements}
+        />
       </div>
     );
   }
