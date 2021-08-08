@@ -4,6 +4,7 @@ import "./styles/main.css";
 import WeeksView from "./views/WeeksView";
 import AgeEntry from "./components/AgeEntry";
 
+import Header from "./components/Header";
 class App extends React.Component {
   state = { age: 50 };
 
@@ -13,7 +14,8 @@ class App extends React.Component {
   render() {
     return (
       <main>
-        <header className="text-gray-600 body-font">
+        <Header handleAge={this.handleAge} age={this.state.age} />
+        {/*      <header className="text-gray-600 body-font">
           <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
             <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
               <span className="ml-3 mr-3 text-lg">Timeview</span>
@@ -29,7 +31,7 @@ class App extends React.Component {
               className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
             />
           </div>
-        </header>
+        </header> */}
         Age:
         {this.state.age}
         <WeeksView age={this.state.age} />

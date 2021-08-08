@@ -10,7 +10,8 @@ class AgeEntry extends React.Component {
   }
   /*  state = { age: 0 }; */
   handleAgeChange = (event) => {
-    var age = event.target.validity.valid ? event.target.value : this.state.age;
+    var age =
+      (event.target.validity.valid ? event.target.value : this.state.age) || 1;
     this.setState({
       age: age,
     });
@@ -23,11 +24,11 @@ class AgeEntry extends React.Component {
           ref={(ref) => (this.inputbox = ref)}
           type="number"
           pattern="[0-9]*"
-          placeholder="Enter your age here"
+          placeholder="Enter age"
           className="w-full pr-10 pl-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:border-green-500 age-entry-field"
           onChange={this.handleAgeChange.bind(this)}
           value={this.state.age}
-          min="0"
+          min="1"
           max="150"
         />
         <svg
