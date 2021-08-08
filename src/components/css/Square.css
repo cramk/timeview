@@ -1,0 +1,31 @@
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 2px solid #05acff;
+  
+  border-radius:5px;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin:2px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+.square:hover{
+  border-color:#ffc105;
+  
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
