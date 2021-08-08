@@ -7,9 +7,12 @@ const Header = (props) => {
     this.setState({ age: ageValue });
   }; */
   return (
-    <header className="text-gray-600 body-font">
+    <header className="text-white-600 body-font">
       <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
-        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <a
+          href="https://timeview.vercel.app"
+          className="flex title-font font-medium items-center text-white-500 mb-4 md:mb-0"
+        >
           <span className="ml-3 mr-3 text-lg">Timeview</span>
         </a>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center"></nav>
