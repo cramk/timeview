@@ -6,19 +6,28 @@ View current age in chunks of time (weeks, months, years)
 
 Demonstration available @ https://timeview.vercel.app
 
-Built with React + 🤍
+Built with **React** + 🤍  
+  
+    
+      
+      
+
+
+
+
+
 
 
 #### TODO List
-⫺Optimize rendering of elements through SVG/CANVAS/WEBGL
-
-⫺Implement month view
-
-⫺Implement year view
-
-⫺Render based off of provided date as an alternative to age
-
-⫺Cleanup UI
-
-⫺Animate and transition elements smoothly
+>⫺Optimize rendering of elements through SVG/CANVAS/WEBGL
+>
+>⫺Implement month view
+>
+>⫺Implement year view
+>
+>⫺Render based off of provided date as an alternative to age
+>
+>⫺Cleanup UI
+>
+>⫺Animate and transition elements smoothly
 
