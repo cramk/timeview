@@ -1,18 +1,18 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
 import Display from "../components/Display";
 
-function App() {
-  const EXPECTED_AGE = 100; // 100 years
-  const WEEKS_IN_LIFE = EXPECTED_AGE * 52;
-
+function WeeksView(props) {
+  const [weeks, setWeeks] = useState(props.age * 52);
+  console.log("age", props.age);
+  useEffect(() => {
+    setWeeks(props.age * 52);
+  }, [props.age]);
+  console.log(`state is ${JSON.stringify(weeks)}`);
   return (
     <main>
-      <caption>Weeks View</caption>
-
-      <Display type="weeks" elements={WEEKS_IN_LIFE}></Display>
+      <Display type="WEEKS" elements={weeks} age={props.age}></Display>
     </main>
   );
 }
 
-export default App;
+export default WeeksView;
