@@ -20,7 +20,7 @@ Built with **React** + 🤍
 
 #### 💢TODO List💢
 >⫺Optimize rendering of elements through SVG/CANVAS/WEBGL
-
+>
 >⫺Implement month view
 >
 >⫺Implement year view
