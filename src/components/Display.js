@@ -8,8 +8,9 @@ class Display extends React.Component {
     return (
       <div className="display">
         <div className="display-board">
-          <Board />
+          <Board elements={this.props.elements} />
         </div>
+
         <DisplayInfo
           type={this.props.type}
           age={this.props.age}
