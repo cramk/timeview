@@ -2,8 +2,6 @@ import React from "react";
 import "./App.css";
 import "./styles/main.css";
 import WeeksView from "./views/WeeksView";
-import AgeEntry from "./components/AgeEntry";
-
 import Header from "./components/Header";
 class App extends React.Component {
   state = { age: 50 };
