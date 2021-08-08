@@ -3,23 +3,32 @@ import Square from "./Square";
 import "./css/Board.css";
 
 class Board extends React.Component {
-  renderSquares(numSquares) {
+  state = { maxElements: 52 * 100 };
+  renderSquares() {
     const squares = [];
-    for (let i = 0; i < numSquares; i++) {
-      squares.push(<Square key={i}></Square>);
+    let useElements = this.state.maxElements;
+    //always render 100 years of elements
+    if (this.state.maxElements < this.props.elements) {
+      useElements = this.props.elements;
+    }
+    //if age is > 100, render age elements
+    for (let i = 0; i < useElements; i++) {
+      squares.push(
+        <Square
+          key={i}
+          elementkey={i}
+          past={i <= this.props.elements}
+          currentyear={
+            i >= this.props.elements - 52 && i <= this.props.elements
+          }
+        ></Square>
+      );
     }
     return squares;
   }
 
   render() {
-    const status = "Current Age";
-
-    return (
-      <div>
-        <div className="status">{status}</div>
-        {this.renderSquares(100)}
-      </div>
-    );
+    return <div>{this.renderSquares()}</div>;
   }
 }
 

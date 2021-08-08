@@ -3,19 +3,22 @@
 }
 
 .square {
-  background: #fff;
-  border: 2px solid #05acff;
-  
-  border-radius:5px;
+  background: transparent;
+  border: 1px solid #05acff;  
+  border-radius:2px;
   float: left;
-  font-size: 24px;
+  font-size: 8px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin:2px;
+  line-height: 8px;
+  margin:1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  height: 8px;
+  width: 8px;
+}
+
+.square.past{
+  border-color:white;
 }
 
 .square:focus {
@@ -25,7 +28,23 @@
   border-color:#ffc105;
   
 }
-
 .kbd-navigation .square:focus {
   background: #ddd;
+}
+
+@keyframes pulse {
+  from {
+    border-color:white;
+  }
+  to {
+    border-color:purple;
+  }
+
+}
+
+.square.pulse{
+  
+  animation:pulse 2s alternate infinite;
+ 
+  
 }
