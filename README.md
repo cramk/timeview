@@ -1,6 +1,6 @@
 💠[PROOF OF CONCEPT]💠
 # ⏳TIMEVIEW - Visualize the progress of your life
-
+<img src="https://user-images.githubusercontent.com/14796164/128657942-87768769-1b10-46b7-9c0f-4d597f4b9642.png" height="300"/>
 Web based tool to visualize your current age in a block based grid.
 View current age in chunks of time (weeks, months, years)
 
